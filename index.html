@@ -3,57 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="style.css" class="css">
+    <title>Task List 2024</title>
+    <link rel="stylesheet" href="style.css" class="css"/>
 </head>
 <body>
     <header>
-        <div class="head"><h1>EatMore</h1></div>
-        <nav>
-            <ul class="navbar">
-                <li>HOME</li>
-                <li>MENU</li>
-                <li>RESERVATION</li>
-                <li>GALLERY</li>
-                <li>CONTACT</li>
-            </ul>
-        </nav>
+        <h1>Task List 2024</h1>
+        <form id="new-task-form">
+<input type="text" id="new-task-input" placeholder="What do you have planned?"/>
+<input type="Submit" id="new-task-submit" value="Add task"/>
+        </form>
     </header>
 
-    <div class="slider">
-
-        <div class="list">
-            <div class="item" >
-                <img src="img1.png">
-            </div>
-            <div class="item active">
-                <img src="img2.png">
-            </div>
-            <div class="item">
-                <img src="img3.png">
-            </div>
-            <div class="item">
-                <img src="img4.png">
-            </div>
-            <div class="item">
-                <img src="img5.png">
-            </div>
+    <main>
+        <section clas="task-list">
+            <h2>Tasks</h2>
+            <div id="tasks">
+              <!-- <div class="task">
+                <div class="content">
+                    <input type="text" class="text" value="My shiny task" readonly/>
+                </div>
+                <div class="actions">
+<button class="edit">Edit</button>
+<button class="delete">Delete</button>
+                </div>
+            </div>--> 
         </div>
-        <div class="circle">
-            EatMore - Good Food,Good Vibes - Feel Good About Your Food
-        </div>
-        <div class="content">
-            <div>menu</div>
-            <div>restaurant</div>
-            <button>See More</button>
-
-        </div>
-        <div class="arow">
-            <button id="prev"><</button>
-            <button id="next">></button>
-        </div>
-    </div>
-
-    <script src="restaurant.js"></script>
+        </section>
+    </main>
+    <script src="main.js"></script>
 </body>
 </html>
